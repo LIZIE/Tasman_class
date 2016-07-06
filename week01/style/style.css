@@ -75,7 +75,7 @@ ul {
 body {
     background: url('../img/bg_pattern.jpg') repeat 0 0;
     max-width: 1320px;
-    margin: 0 auto;
+    margin: 20px auto;
     box-shadow: #1c1c1c 0 0 20px 8px;
     display: block;
     position: relative;
@@ -359,9 +359,8 @@ header.header section {
 }
 /* footer */
 footer{
-    width: 100%;
+    width: 100%;    
     clear:both;
-    margin-bottom: 20px;
 }
 footer .footer_Wrap{    
     background-color: #474747;
