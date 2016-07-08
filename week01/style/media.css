@@ -11,7 +11,7 @@
     /*layout*/
     .con_Box02 .Box02-right,
     .con_Box02 .Box02-left {
-        height: 400px;
+        height: 390px;
     }
     /*con01*/
     .con_Box01 aside .info dt,
@@ -52,14 +52,8 @@
         clear: both;
         width: 100%;
     }
-    .con_Box01 article .about {
-        margin-bottom: 50px;
-    }
     .con_Box02 .Box02-left {
         height: 100%;
-    }
-    .con_Box02 .Box02-right {
-        height: 330px;
     }
     footer .footer_Wrap {
         height: 520px;
@@ -102,9 +96,6 @@
     .backgray{
     	background-color: #474747;
     	padding-bottom: 30px;
-    }
-    .con_Box02 .Box02-right {
-        min-height: 920px;
     }
     /*header*/
     .title h1 {
