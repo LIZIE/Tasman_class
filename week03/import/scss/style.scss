@@ -1,0 +1,146 @@
+/*common*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+img,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*color Variables*/
+
+$background: #f4eedb;
+$deepblue:#3a404e;
+$blue:#4e5f86;
+$white:#fff;
+$gray:#ccc;
+$lightgray:#eee;
+$emphasis:#e3f4c8;
+$result:#3a404e;
+
+/*Mixins*/
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+/*body*/
+
+body {
+    font-family: 'arial';
+    background-color: $background;
+    padding: 2% 5%;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/*wrap whole div*/
+
+.wrap {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    border: 2px solid $emphasis;
+    background: $deepblue;
+    color: $white;
+    @include border-radius(10px);
+    /*onclick key list style*/
+    ul li {
+        padding: 20px;
+        font-size: 25px;
+        /*top title in the calculater*/
+        h2 {
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+    ul li:hover {
+        cursor: pointer;
+    }
+    /*top*/
+    .top {
+        background: $blue;
+        @include border-radius(10px);
+        .width {
+            width: 92%;
+            margin: 0 auto;
+            .stitle::after {
+                clear: both;
+                content: "";
+            }
+            /*result screen*/
+            .screen {
+                width: 97%;
+                padding: 10px 20px;
+                font-size: 35px;
+                background: $white;
+                @include border-radius(10px);
+                margin: 0 auto;
+                display: table;
+                color: $result;
+            }
+            /*top bottom line style*/
+            .top_line {
+                border-bottom: $lightgray solid 2px;
+                width: 97%;
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+            .top_line li {
+                color: $gray;
+            }
+            .top_line li:nth-child(1),
+            .top_line li:nth-child(2) {
+                color: $emphasis;
+            }
+        }
+        /*main calculator key*/
+        .numberkey {
+            padding-bottom: 20px;
+        }
+    }
+}
