@@ -1,0 +1,114 @@
+/*common*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+div,
+img,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  display: block; }
+
+li {
+  list-style: none; }
+
+/*color Variables*/
+/*Mixins*/
+/*body*/
+body {
+  font-family: 'arial';
+  background-color: #f4eedb;
+  padding: 2% 5%; }
+
+h1 {
+  margin: 20px;
+  font-size: 24px;
+  font-weight: bold; }
+
+/*wrap whole div*/
+.wrap {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  border: 2px solid #e3f4c8;
+  background: #3a404e;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  /*onclick key list style*/
+  /*top*/ }
+  .wrap ul li {
+    padding: 20px;
+    font-size: 25px;
+    /*top title in the calculater*/ }
+    .wrap ul li h2 {
+      font-size: 20px;
+      text-align: left; }
+  .wrap ul li:hover {
+    cursor: pointer; }
+  .wrap .top {
+    background: #4e5f86;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    /*main calculator key*/ }
+    .wrap .top .width {
+      width: 92%;
+      margin: 0 auto;
+      /*result screen*/
+      /*top bottom line style*/ }
+      .wrap .top .width .stitle::after {
+        clear: both;
+        content: ""; }
+      .wrap .top .width .screen {
+        width: 97%;
+        padding: 10px 20px;
+        font-size: 35px;
+        background: #fff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: table;
+        color: #3a404e; }
+      .wrap .top .width .top_line {
+        border-bottom: #eee solid 2px;
+        width: 97%;
+        margin: 0 auto;
+        padding: 10px 0; }
+      .wrap .top .width .top_line li {
+        color: #ccc; }
+      .wrap .top .width .top_line li:nth-child(1),
+      .wrap .top .width .top_line li:nth-child(2) {
+        color: #e3f4c8; }
+    .wrap .top .numberkey {
+      padding-bottom: 20px; }
