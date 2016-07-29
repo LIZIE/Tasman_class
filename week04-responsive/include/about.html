@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lizzie">
+    <title>responsive website using html5&css</title>
+    <!--style-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../import/css/style.css">
+    <!-- jquery -->
+    <script src="../js/jquery-1.12.4.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- image height resize as contents -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        resizeDiv(); // function set
+
+        $(window).resize(function() {
+            resizeDiv(); // when window resize
+        });
+
+    });
+
+    function resizeDiv() {
+        var articles = $(".aboutus-list"); // class -> var articles
+        for (var i = 0; i < articles.length; i++) { // length
+            var article = articles[i];
+            // set contents's height
+            var contH = article.getElementsByClassName('cont')[0].clientHeight;
+            // image's height = contents's height + px 
+            article.getElementsByClassName('bg_img')[0].style.height = contH + "px";
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container">
+        <!-- header start -->
+        <header class="row">
+            <!-- logo start -->
+            <div class="logo pull-left">
+                <a href="../index.html"><img src="../img/googlelogo_color_272x92dp.png" alt="logo" /></a>
+            </div>
+            <!-- end start -->
+            <!-- nav start -->
+            <nav class="nav pull-right" role="navigation">
+                <ul id="gnb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="# ">Service</a></li>
+                    <li><a href="# ">Prodcut</a></li>
+                    <li><a href="# ">FAQ</a></li>
+                    <li><a href="# ">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- nav end -->
+        </header>
+        <!-- header end -->
+        <!-- sub contents start -->
+        <!-- sub top title start -->
+        <section class="subtitle">
+            <p class="text-center">DESIGN & COSMETIC
+                <br />DEVELOPMENT COMPANY</p>
+        </section>
+        <!-- sub top title end -->
+        <article class="aboutus-list row">
+            <h1 class="text-center ">About us</h1>
+            <div class="aboutus-img01 col-sm-6 no-padding thumbnail bg_img">
+            </div>
+            <div class="col-sm-6 leftpadding no-padding cont">
+                <p>In year 2000, very modern and liberal minded CEO, Young Wook Choi established OUTIN FUTURES with experienced and talented professionals, to provide ‘future innovations’ of package design solution, product development & R&D service to the beauty and health industry in Korea. Now, Young Wook Choi and his employees, hand in hand with the company, are constantly achieving their goals to develop and supply the best quality products and service worldwide.</p>
+                <p>(주)아우딘퓨쳐스는 2000년 설립되어 화장품 분야의 제품 기획, 처방개발, 용기개발, 디자인개발, 화장품개발을 위한 생산 전 공정 TOTAL ONE-STOP ODM 개발전문회사로 시작하여 끊임없는 연구와 최고의 제품을 만들겠다는 도전정신을 가지고 <span class="red">차별화 된 새로운 컨셉</span>과 새로운 제품으로 세계의 클라이언트들을 만족 시키기 위해 끊임없이 노력하고 있습니다.</p>
+            </div>
+        </article>
+        <article class="aboutus-list row">
+            <h1 class="text-center ">Philosophy</h1>
+            <div>
+                <div class="aboutus-img02 col-sm-6 no-padding thumbnail bg_img">
+                </div>
+                <div class="aboutus-txt02 col-sm-6 rightpadding no-padding cont">
+                    <p>
+                        “We are now instigating new initiatives to become a company that creates world recognized innovations with new system of Business scope and work procedure. Out focus is now on innovation oriented business expansion for the international market.” - message from CEO</p>
+                    <p>우리는 새로운 비지니스 모델과 회사의 시스템으로 세계가 주목할 이노베이션을 개발해야 하며, 이를 통한 우리의 새로운 포커스는 세계를 향한 이노베이션 중심 사업의 확대입니다.</p>
+                    <div class="mobile-align">
+                        <h2>MISSION</h2>
+                        <p>Creating
+                            <br/>Reason & Value</p>
+                        <h2>SPIRIT</h2>
+                        <p>Crean Passionate
+                            <br/>& Challenging</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- sub contents list end -->
+        <!-- sub contents Business Division tab start -->
+        <section class="row">
+            <h1 class="text-center">Business Division</h1>
+            <!-- tab start -->
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#tab1" data-toggle="tab">ODM BUSINESS</a></li>
+                <li role="presentation"><a href="#tab2" data-toggle="tab">DESIGN BUSINESS</a></li>
+            </ul>
+            <!-- tab end -->
+            <div class="tab-content ">
+                <!-- tab contents01 start -->
+                <div class="tab-pane active text-center" id="tab1">
+                    <p class="title">ODM Service</p>
+                    <p class="titlecon">We work for client's market success.</p>
+                    <div class="contents01">
+                        <div class="img-circle ">
+                            <p>Seamless Service</p>
+                            <p>컨셉부터 완제품 공급까지 원스탑 솔루션을 제공합니다.</p>
+                        </div>
+                        <div class="img-circle">
+                            <p>Global Standard</p>
+                            <p>글로벌 규격과 각 국가 표준에 맞는 ODM솔루션을 제공합니다.</p>
+                        </div>
+                        <div class="img-circle">
+                            <p>Well Experienced</p>
+                            <p>K-beauty 전문가 그룹이 60개 이상의 글로벌 브랜드 제품 개발 노하우를 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab contents01 end -->
+                <!-- tab contents02 start -->
+                <div class="tab-pane text-center" id="tab2">
+                    <p class="title">ODM Service</p>
+                    <p class="titlecon">We work for client's market success.</p>
+                    <div class="contents01">
+                        <div class="img-circle ">
+                            <p>Seamless Service</p>
+                            <p>컨셉부터 완제품 공급까지 원스탑 솔루션을 제공합니다.</p>
+                        </div>
+                        <div class="img-circle">
+                            <p>Global Standard</p>
+                            <p>글로벌 규격과 각 국가 표준에 맞는 ODM솔루션을 제공합니다.</p>
+                        </div>
+                        <div class="img-circle">
+                            <p>Well Experienced</p>
+                            <p>K-beauty 전문가 그룹이 60개 이상의 글로벌 브랜드 제품 개발 노하우를 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab contents02 end -->
+            </div>
+        </section>
+        <hr>
+        <!-- sub contents Business Division tab end -->
+        <!-- sub contents office image list start -->
+        <section class="row">
+            <h1 class="text-center">Office</h1>
+            <div class="image-menu row">
+                <div class="col-sm-3 col-xs-6 no-padding banner">
+                    <div class="overlay hidden"></div>
+                    <div class="image-menu-desc text-center">
+                        <div class="office-txt">
+                            <h3>Seoul</h3>
+                            <p>서울시 강남구 테헤란도 443 14F</p>
+                            <p class="red">HEAD OFFICE</p>
+                            <p>443 14F, Teheran-ro Gangnam-Gu, Seoul, Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 no-padding banner">
+                    <div class="overlay hidden"></div>
+                    <div class="image-menu-desc text-center">
+                        <div class="office-txt">
+                            <h3>Seoul</h3>
+                            <p>서울시 강남구 테헤란도 443 14F</p>
+                            <p class="red">HEAD OFFICE</p>
+                            <p>443 14F, Teheran-ro Gangnam-Gu, Seoul, Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 no-padding banner">
+                    <div class="overlay hidden"></div>
+                    <div class="image-menu-desc text-center">
+                        <div class="office-txt">
+                            <h3>Seoul</h3>
+                            <p>서울시 강남구 테헤란도 443 14F</p>
+                            <p class="red">HEAD OFFICE</p>
+                            <p>443 14F, Teheran-ro Gangnam-Gu, Seoul, Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 no-padding banner">
+                    <div class="overlay hidden"></div>
+                    <div class="image-menu-desc text-center">
+                        <div class="office-txt">
+                            <h3>Seoul</h3>
+                            <p>서울시 강남구 테헤란도 443 14F</p>
+                            <p class="red">HEAD OFFICE</p>
+                            <p>443 14F, Teheran-ro Gangnam-Gu, Seoul, Korea</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sub contents office image list end -->
+        <!-- sub contents end -->
+        <!-- footer start -->
+        <footer class="row">
+            <div class="alert alert-warning row" role="alert">COPYRIGHT @ OUTIN FUTURES INC. ALL RIGHTS RESERVED</div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- container end -->
+</body>
+
+</html>
