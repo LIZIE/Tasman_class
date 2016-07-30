@@ -92,6 +92,24 @@ header {
     background: url("../../img/office_bg_03.jpg") no-repeat 0 0; }
   .image-menu .banner:nth-child(4) {
     background: url("../../img/office_bg_04.jpg") no-repeat 0 0; }
+  .image-menu .banner-main {
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    height: 100%; }
+    .image-menu .banner-main .image-menu-desc {
+      width: 100%; }
+      .image-menu .banner-main .image-menu-desc .text {
+        color: #fff;
+        font-size: 15px; }
+      .image-menu .banner-main .image-menu-desc #title {
+        position: absolute;
+        width: 100%;
+        top: 15%; }
+      .image-menu .banner-main .image-menu-desc #desc {
+        position: absolute;
+        width: 100%;
+        bottom: 25%; }
   .image-menu .banner {
     cursor: pointer;
     position: relative;
@@ -99,33 +117,20 @@ header {
     padding: 20px 0;
     background-size: cover;
     /* Office Division*/ }
-    .image-menu .banner .image-menu-desc {
-      width: 100%; }
-      .image-menu .banner .image-menu-desc .text {
-        color: #fff;
-        font-size: 15px; }
-      .image-menu .banner .image-menu-desc #title {
-        position: absolute;
-        width: 100%;
-        top: 15%; }
-      .image-menu .banner .image-menu-desc #desc {
-        position: absolute;
-        width: 100%;
-        bottom: 25%; }
-      .image-menu .banner .image-menu-desc .office-txt {
-        color: #fff;
-        position: relative;
-        left: 5%;
-        text-align: left; }
-        .image-menu .banner .image-menu-desc .office-txt h3 {
-          font-size: 35px;
-          margin-bottom: 25px; }
-        .image-menu .banner .image-menu-desc .office-txt .red {
-          color: #fff0d7; }
-        .image-menu .banner .image-menu-desc .office-txt p {
-          font-size: 12px;
-          line-height: 100%; }
-  .image-menu .banner:hover .overlay {
+    .image-menu .banner .office-txt {
+      color: #fff;
+      position: relative;
+      left: 5%;
+      text-align: left; }
+      .image-menu .banner .office-txt h3 {
+        font-size: 35px;
+        margin-bottom: 25px; }
+      .image-menu .banner .office-txt .red {
+        color: #fff0d7; }
+      .image-menu .banner .office-txt p {
+        font-size: 12px;
+        line-height: 100%; }
+  .image-menu .banner:hover .overlay, .image-menu .banner-main:hover .overlay {
     display: block !important; }
 
 /*sitemap section*/

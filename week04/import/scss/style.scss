@@ -138,12 +138,11 @@ header {
     .banner:nth-child(4) {
         background: url('../../img/office_bg_04.jpg') no-repeat 0 0;
     }
-    .banner {
+    .banner-main {
+        padding: 0;
         cursor: pointer;
         position: relative;
         height: 100%;
-        padding: 20px 0;
-        background-size: cover;
         .image-menu-desc {
             width: 100%;
             .text {
@@ -160,28 +159,35 @@ header {
                 width: 100%;
                 bottom: 25%;
             }
-            .office-txt {
-                color: $white;
-                position: relative;
-                left: 5%;
-                text-align: left;
-                h3 {
-                    font-size: 35px;
-                    margin-bottom: 25px;
-                }
-                .red {
-                    color: $lightred;
-                }
-                p {
-                    font-size: 12px;
-                    line-height: 100%;
-                }
+        }
+    }
+    .banner {
+        cursor: pointer;
+        position: relative;
+        height: 100%;
+        padding: 20px 0;
+        background-size: cover;
+        .office-txt {
+            color: $white;
+            position: relative;
+            left: 5%;
+            text-align: left;
+            h3 {
+                font-size: 35px;
+                margin-bottom: 25px;
+            }
+            .red {
+                color: $lightred;
+            }
+            p {
+                font-size: 12px;
+                line-height: 100%;
             }
         }
         /* Office Division*/
     }
     /*mouse hover overlay*/
-    .banner:hover .overlay {
+    .banner:hover .overlay, .banner-main:hover .overlay {
         display: block !important;
     }
 }
