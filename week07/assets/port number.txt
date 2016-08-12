@@ -1,0 +1,62 @@
+PORT NUMBER
+
+400  
+403(permission)  404(not found)
+
+500 server error
+500(internal server error) 501( server error)  503
+
+200 200(ok requested accepted)
+
+300 304(not modify)
+
+
+
+//////////////////////////////////
+
+
+AMP / API
+TCP/IP 
+
+요소검사에서 네트워크쪽도 확인해볼것!
+NETWORK
+
+OSI layer model 
+
+
+1. 웹서버에 API 를 넣으면 안된다고 했는데, 그걸 어떻게 처리하는지?
+2. HTTPS로 어떻게 설정하는지??
+3. SERVER AGENT??
+4. 파일전송하는게 뭐라고 했는지? TCP/IP 말고?
+
+//////////////////////////////////
+
+
+
+ajax ---
+비동기 방식 자바스크립트
+asynchronous javascript
+
+동기화 / 비동기화
+
+비동기화 방식을 던지기 위한것
+
+$.post(url,data).done(funciton).fail(function)
+
+Full form -------------
+$.ajax(){
+attributes:
+url:
+method:
+keep-alive:
+...
+function() done:
+function() fail:
+submitURL: function()
+}
+
+//////////////////////////////////
+
+
+
+

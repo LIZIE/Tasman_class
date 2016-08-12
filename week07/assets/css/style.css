@@ -1,0 +1,53 @@
+/*common*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+img,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    display: block;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*body*/
+
+html,
+body {
+    font-family: 'Open Sans', 'Malgun Gothic', 'Nanum Gothic', 'dotum';
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*login_form*/
+
+.login_form, .signup_form {
+    width: 500px;
+    margin: 20% auto;
+}
+
+.link_signup {
+    padding-top: 10px;
+}
+#confirmed_form, #failed_form, #message_box .alert{
+  display: none;
+  font-size: 15px;
+}
