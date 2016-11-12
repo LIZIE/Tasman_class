@@ -1,0 +1,339 @@
+// main header 
+.header {
+    position: relative;
+    //top tab bar
+    .main_toptab {
+        background: $tab_lightgray;
+        border-bottom: $border-default;
+        color: $text-color;
+        width: $basic-width;
+        //top tab - left social icons
+        .toptab_social {
+            padding: 12px 0 10px 15px;
+            border-left: $border-default;
+            border-right: $border-default;
+            a {
+                color: $text-color;
+                margin-right: 15px;
+            }
+            a:hover {
+                color: $font-orange;
+            }
+        }
+        //top tab - left text
+        .addtxt {
+            padding: 12px 15px 10px 15px;
+            border-right: $border-default;
+            font-weight: bold;
+        }
+        //top tab - right info
+        .toptab_info {
+            ul {
+                border-left: $border-default;
+                li {
+                    padding: 12px 15px 10px 15px;
+                    border-right: $border-default;
+                    display: inline-block;
+                    list-style: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    //header - logo, nav
+    header {
+        .navbar {
+            margin: 0;
+        }
+        .navbar-default {
+            border: none;
+            //logo
+            h1 {
+                width: 100%;
+                padding: 25px 0;
+                border-bottom: $border-default;
+                img {
+                    width: 170px;
+                }
+            }
+            //mobile menu
+            .navbar-header {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            //web nav
+            .navbar-collapse {
+                padding: 20px 0;
+                .nav {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    a {
+                        color: $text-color;
+                        margin-right: 10px;
+                        font-weight: bold;
+                        padding: 5px;
+                    }
+                    a:hover {
+                        color: $font-orange;
+                    }
+                }
+                // nav hover background color
+                .nav > li > a:hover,
+                .nav > li > a {
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+            }
+        }
+    }
+}
+
+.content {
+    //main section 01. main_top
+    img {
+        width: 100%;
+    }
+    position: relative;
+    button {
+        margin-right: 10px;
+    }
+    .col_height {
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .main_top {
+        background: url('../images/main/main_topvisual.jpg') no-repeat 0 70%;
+        background-size: cover;
+        padding: 220px 0;
+        width: 100%;
+        position: relative;
+        .main_toptitle {
+            position: absolute;
+            top: 20%;
+            color: $font-white;
+            .visual_title {
+                font-size: $font-size-xl;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .visual_txt {
+                font-size: $font-size-m;
+                width: 450px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    //main_section
+    .main_section,
+    .sub_section {
+        position: relative;
+        h2 {
+            font-weight: bold;
+            padding-bottom: 20px;
+            color: $font-black;
+        }
+        .title_line {
+            width: 80px;
+            height: 2px;
+            display: inline-block;
+            background: $yellow_bg;
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin: 15px 0;
+            font-weight: bold;
+            color: $font-black;
+        }
+        h4 {
+            margin: 15px 0;
+            font-weight: bold;
+            color: $font-black;
+        }
+        .link {
+            margin: 15px 0;
+            a {
+                color: $font-orange;
+                font-weight: bold;
+            }
+        }
+    }
+    //main section 02. main_service
+    .main_service {
+        position: relative;
+        background-color: $light_gray;
+        height: 300px;
+        .services {
+            position: relative;
+            top: -80px;
+            z-index: 100;
+            h3 {
+                margin: 15px 0;
+                font-weight: bold;
+                color: $font-black;
+            }
+            .link {
+                margin: 15px 0;
+                a {
+                    color: $font-orange;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    //main section 03. U.S. Certified Contractors
+    .main_Contractors {
+        .Contractors {
+            text-align: center;
+            .col-xs-12 {
+                padding: 0 10px;
+            }
+            i {
+                font-size: $font-icon_xl;
+                margin-bottom: 20px;
+                color: $font-gray;
+            }
+            h3 {
+                margin: 15px 0;
+                font-weight: bold;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    //main section 04. WORKING WITH US
+    .main_withus {
+        background: url('../images/main/main_workingwithus.jpg') no-repeat center 40%;
+        background-size: cover;
+        padding: 220px 0;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        .main_toptitle {
+            width: 50%;
+            position: absolute;
+            line-height: 4em;
+            top: 20%;
+            color: $font-white;
+            .visual_title {
+                font-size: $font-size-xl;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .visual_stitle {
+                font-weight: bold;
+                font-size: $font-size-m;
+            }
+        }
+    }
+    //main section 06. Featured Works
+    .main_featured {
+        background-color: $footer_bgBottom;
+        padding: 50px 0;
+        margin-bottom: 50px;
+        h2 {
+            color: $font-white;
+        }
+        header {
+            .title_line {
+                background: $gray;
+            }
+        }
+        .img_hover {
+            width: 100%;
+            position: relative;
+        }
+        .img_hover:hover .overlay,
+        .img_hover:hover .pictxt {
+            display: block !important;
+        }
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background: $overlay;
+            z-index: 1;
+            top: 0;
+            position: absolute;
+        }
+        .pictxt {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            color: $font-white;
+            z-index: 5;
+            .visual_stitle {
+                padding-bottom: 10px;
+                font-weight: bold;
+                font-size: $font-size-m;
+            }
+        }
+    }
+    //main section 07. News 
+    .main_news {
+        margin-bottom: 30px;
+        h4 a {
+            color: $font-black;
+        }
+        h4 a:hover {
+            color: $font-orange;
+            text-decoration: none;
+        }
+        .news_aside {
+            border-bottom: $border-default;
+            border-top: $border-default;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            span {
+                margin-right: 10px;
+                i {
+                    padding-right: 3px;
+                }
+            }
+        }
+        .txt {
+            margin-bottom: 10px;
+        }
+    }
+    //main section 08. client
+    .main_last {
+        margin-bottom: 60px;
+        .last_client {
+            .client_logos {
+                li {
+                    border: $border-default;
+                }
+                li:nth-child(n+4) {
+                    border-top: 0;
+                }
+                li:nth-child(1),
+                li:nth-child(4) {
+                    border-right: 0;
+                }
+                li:nth-child(3),
+                li:nth-child(6) {
+                    border-left: 0;
+                }
+            }
+        }
+        .last_test {
+            font-size: $font-size-m;
+            position: relative;
+            .box_line {
+                border: $border-default;
+                padding: 25px 20px 40px 20px;
+            }
+            .people {
+                position: absolute;
+                bottom: -55px;
+                img {
+                    width: 75px;
+                    margin: 0 15px;
+                }
+                span {
+                    font-weight: bold;
+                    color: $font-black;
+                }
+            }
+        }
+    }
+}
