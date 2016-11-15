@@ -359,7 +359,7 @@ a:hover {
         }
         li {
             padding: 0;
-            padding: 30px;
+            padding: 30px 50px;
             height: 300px;
             .num {
                 font-family: 'Calibri-Bold';
@@ -367,7 +367,6 @@ a:hover {
             }
         }
         p {
-            width: 88%;
             text-align: justify;
         }
         li:nth-child(1),
