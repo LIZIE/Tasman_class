@@ -1,0 +1,521 @@
+/*color Variables*/
+
+$white:#fff;
+$lightgray:#ededed;
+$gray:#aaa;
+$black:#000;
+$yellow:#ffb81e;
+$orange:#f17938;
+$red:#d73240;
+$mint:#0fb1bc;
+$deepgray:#424242;
+$font-xl:70px;
+$font-xl2:88px;
+$font-l:50px;
+$font-l2:62px;
+$font-l:48px;
+$font-m:30px;
+$font-m2:24px;
+$font-s:18px;
+$font-xs:14px;
+
+/*BORDOER Variables*/
+
+$border-dark: 1px solid $deepgray;
+$border-red: 1px solid $red;
+
+/*common*/
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+ul,
+li,
+img,
+nav,
+section,
+article,
+aside,
+footer,
+header {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+img,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    display: block;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.table {
+    display: table;
+    height: 100%;
+    margin: 0;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+
+/*font face*/
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "../font/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category !="" {
+                family: "#{$style-name}",
+                #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+@include font-face('Calibri', 'Calibri', 'Calibri', 'serif');
+@include font-face('Calibri-Bold', 'Calibri-Bold', 'Calibri-Bold', 'serif');
+
+/*body*/
+
+html,
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+}
+
+body {
+    width: 100%;
+    color: $deepgray;
+}
+
+a {
+    color: $white;
+}
+
+a:hover {
+    color: $red;
+    text-decoration: none;
+}
+
+
+/*nav*/
+
+.navbar {
+    border: none; //delete border
+    margin: 0;
+    //opacity: 0.85;
+    .nav_back {
+        background: $red;
+        padding: 10px;
+    }
+}
+
+.navbar-inverse {
+    background: transparent;
+    height: 120px;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px 10px;
+    .navbar-header {
+        a {
+            font-family: 'Calibri-Bold';
+            font-size: 38px;
+            font-weight: bold;
+            color: $red;
+        }
+        .navbar-brand {
+            margin-left: 10px; //logo
+            color: $white;
+            font-size: $font-m2;
+        }
+        .navbar-toggle {
+            margin-right: 30px; //toggle menu
+            background-color: $red;
+        }
+    }
+    .navbar-collapse {
+        margin: 0;
+        // background: $black;
+        .navbar-nav {
+            li {
+                padding: 0 10px;
+                a {
+                    color: $white;
+                }
+                a:hover {
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+        }
+        .navbar-nav > .active > a,
+        .navbar-nav > .active > a:hover,
+        .navbar-nav > .active > a:focus {
+            color: $black !important;
+            background: transparent;
+            box-shadow: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+    text-shadow: none;
+}
+
+
+/*header*/
+
+#header {
+    width: 100%;
+    height: 100%;
+    background: url('../../img/main_blur.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    .title {
+        width: 100%;
+        position: relative;
+        display: table;
+        height: 100%;
+        .table-cell {
+            vertical-align: middle;
+            display: table-cell;
+            width: 500px;
+            h1 {
+                font-weight: bold;
+                font-size: $font_xl;
+                color: $red;
+                font-family: Calibri;
+                -webkit-text-stroke: 1px $red;
+                text-shadow: 3px 3px 0 $black, -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+                span {
+                    font-size: $font_xl2;
+                }
+            }
+            p {
+                width: 100%;
+                text-align: center;
+            }
+            .subtitle {
+                margin: 20px 0;
+                font-size: $font_m;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+/*container*/
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*header info - col 3*/
+
+.header-info {
+    background: $red;
+    color: $white;
+    padding: 25px 20px;
+    margin-top: -80px;
+    z-index: 2;
+    .glyphicon {
+        font-size: $font-m;
+    }
+    h2 {
+        padding: 20px 0;
+    }
+}
+
+
+/*section1*/
+
+.contents {
+    padding-top: 100px;
+    header {
+        padding-bottom: 50px;
+        h3 {
+            font-size: $font-l;
+            font-family: 'Calibri-Bold';
+            span {
+                font-family: 'Calibri';
+            }
+        }
+        .h_line {
+            background: $red;
+            width: 100px;
+            margin-bottom: 50px;
+            height: 3px;
+            display: block;
+        }
+        p {
+            font-size: $font-s;
+        }
+    }
+    section {
+        h4 {
+            font-size: $font-m;
+        }
+        p {
+            padding: 15px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            width: 150px;
+            font-size: $font-s;
+        }
+        img {
+            width: 240px;
+            height: 240px;
+        }
+        .serviceimg {
+            h4 {
+                margin-top: 10px;
+                font-family: 'Calibri-Bold';
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .img-circle {
+                margin: 0 auto 30px auto;
+            }
+        }
+        .circle {
+            background: $red;
+            width: 35px;
+            height: 30px;
+            padding: 10px;
+            color: $white;
+            font-weight: bold;
+            font-size: $font-xs;
+        }
+    }
+    .img-phone {
+        background: url('../../img/iphone.png') no-repeat center top;
+        background-size: 60%;
+        height: 400px;
+    }
+    .howto {
+        .arrow {
+            z-index: 10;
+            position: absolute;
+            top: 45%;
+            right: -27px;
+            font-size: $font-m;
+            font-weight: bold;
+            color: $red;
+            width: 60px;
+            height: 60px;
+            background: $lightgray;
+            padding: 10px 15px;
+        }
+        li {
+            padding: 0;
+            padding: 30px;
+            height: 300px;
+            .num {
+                font-family: 'Calibri-Bold';
+                font-size: $font-l;
+            }
+        }
+        p {
+            width: 88%;
+            text-align: justify;
+        }
+        li:nth-child(1),
+        li:nth-child(5) {
+            background: $red;
+            color: $white;
+        }
+        li:nth-child(2),
+        li:nth-child(6) {
+            background: $lightgray;
+        }
+        li:nth-child(3),
+        li:nth-child(4) {
+            background: url('../../img/howto_01.png') no-repeat center top;
+            background-size: cover;
+        }
+    }
+    .contact {
+        text-align: center;
+        width: 100%;
+        .form-group {
+            margin-bottom: 20px;
+            padding: 8px;
+            input,
+            textarea {
+                border: $border-dark;
+                padding: 10px 20px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        button {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 80px;
+    background: $deepgray;
+    padding: 40px 0 20px 0;
+    width: 100%;
+    color: $white;
+    ul {
+        margin-bottom: 15px;
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            a {
+                border: 2px solid $gray;
+                border-radius: 50%;
+                width: 33px;
+                height: 33px;
+                padding: 6px 9px;
+                display: block;
+            }
+            a:hover {
+                color: $red;
+                border-color: $red;
+            }
+        }
+    }
+}
+
+
+/*mobile size*/
+
+@media screen and (max-width: 767px) {
+    /*header*/
+    #header {
+        .title {
+            .table-cell {
+                max-width: 500px;
+                h1 {
+                    font-size: $font_l;
+                    span {
+                        font-size: $font_l2;
+                    }
+                }
+            }
+        }
+    }
+    /*header info - col 3*/
+    .header-info {
+        .col-sm-4 {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px dashed $white;
+        }
+        .col-sm-4:last-child {
+            border-bottom: 0;
+            margin: 0;
+            padding-bottom: 0;
+        }
+    }
+    .contents {
+        .img-phone {
+            height: 0;
+            display: none;
+        }
+        p {
+            text-align: justify;
+        }
+        .arrow {
+            display: none;
+        }
+        .serviceimg > li {
+            margin-bottom: 20px;
+        }
+        .serviceimg > li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*mobile size*/
+
+@media screen and (max-width: 360px) {
+    /*header*/
+    #header {
+        .title {
+            .table-cell {
+                max-width: 300px;
+                h1 {
+                    font-size: $font_l;
+                    span {
+                        font-size: $font_m2;
+                    }
+                }
+                .subtitle {
+                    font-size: $font_s;
+                }
+            }
+        }
+    }
+    /*header info - col 3*/
+    .header-info {
+        margin-top: 0;
+    }
+    .howto {
+        li:nth-child(3)
+         {
+            display: none;
+        }
+    }
+}
