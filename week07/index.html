@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lizzie">
+    <title>jquery</title>
+    <!--style-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jquery -->
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <!-- login js -->
+    <script src="assets/js/login_object.js"></script>
+</head>
+
+<body id="login">
+    <!-- container start -->
+    <div class="container">
+        <!-- login_form start -->
+        <div class="login_form" id="form_login">
+            <!-- panel start -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <!-- input start -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInlogin_infoputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <!-- input end -->
+                    <!-- checkbox start -->
+                    <div class="checkbox pull-left">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <!-- checkbox end -->
+                    <!-- Signup start -->
+                    <div id="doSignup" class="link_signup pull-right">
+                        <a href="signup.html">Signup</a>
+                    </div>
+                    <!-- Signup end -->
+                    <div class="clearfix"></div>
+                    <!-- Login button start -->
+                    <button type="button" class="btn btn-primary btn-block" id="doLogin">Login</button>
+                    <!-- Login button end -->
+                </div>
+            </div>
+            <!-- panel end -->
+            <!-- confirmed-form start -->
+            <div id="confirmed_form" class="custom_form">
+                <div class="alert alert-success login_info text-center" role="alert">
+                    <h3>Login Information</h3>
+                    <p class="name"></p>
+                    <p class="email"></p>
+                    <p class="password"></p>
+                    <div class="link">
+                        <a href="index.html">home</a>
+                    </div>
+                </div>
+            </div>
+            <!-- confirmed-form end -->
+            <!-- failed-form start -->
+            <div id="failed_form" class="custom_form">
+                <div class="alert alert-danger login_info text-center" role="alert">
+                    <h3>Login failed!</h3>
+                    <div class="link">
+                        <a href="index.html">again</a>
+                    </div>
+                </div>
+            </div>
+            <!-- failed-form end -->
+        </div>
+        <!-- login_form end -->
+    </div>
+    <!-- container end -->
+    <script type="text/javascript">
+    $(login.init);
+    </script>
+</body>
+
+</html>

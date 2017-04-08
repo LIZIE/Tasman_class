@@ -1,0 +1,251 @@
+/*common*/
+* {
+  margin: 0;
+  padding: 0; }
+
+div,
+img,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  display: block; }
+
+li {
+  list-style: none;
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.no-padding {
+  padding: 0; }
+
+article,
+section {
+  padding-bottom: 50px; }
+
+/*color Variables*/
+/*body*/
+html,
+body {
+  font-family: 'Open Sans', 'Malgun Gothic', 'Nanum Gothic', 'dotum';
+  width: 100%;
+  height: 100%; }
+
+a {
+  color: #445e7f; }
+
+a:hover {
+  text-decoration: none;
+  color: #4b96f3; }
+
+/*overlay&hidden*/
+.overlay {
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
+/*header*/
+header {
+  margin: 20px 0;
+  /*navigation*/ }
+  header .logo {
+    width: 100px; }
+  header .nav #gnb {
+    line-height: 2.5; }
+    header .nav #gnb li {
+      float: left;
+      padding: 0 10px; }
+      header .nav #gnb li a {
+        text-decoration: none; }
+
+/*slide section*/
+.slide {
+  /*text in slide img*/ }
+  .slide .carousel-caption {
+    bottom: 100px; }
+    .slide .carousel-caption .caption-title {
+      font-size: 50px;
+      font-weight: bold; }
+    .slide .carousel-caption .caption-description {
+      font-size: 24px; }
+
+/*image banner section*/
+.image-menu {
+  /*mouse hover overlay*/ }
+  .image-menu .banner:nth-child(1) {
+    background: url("../../img/office_bg_01.jpg") no-repeat 0 0; }
+  .image-menu .banner:nth-child(2) {
+    background: url("../../img/office_bg_02.jpg") no-repeat 0 0; }
+  .image-menu .banner:nth-child(3) {
+    background: url("../../img/office_bg_03.jpg") no-repeat 0 0; }
+  .image-menu .banner:nth-child(4) {
+    background: url("../../img/office_bg_04.jpg") no-repeat 0 0; }
+  .image-menu .banner-main {
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    height: 100%; }
+    .image-menu .banner-main .image-menu-desc {
+      width: 100%; }
+      .image-menu .banner-main .image-menu-desc .text {
+        color: #fff;
+        font-size: 15px; }
+      .image-menu .banner-main .image-menu-desc #title {
+        position: absolute;
+        width: 100%;
+        top: 15%; }
+      .image-menu .banner-main .image-menu-desc #desc {
+        position: absolute;
+        width: 100%;
+        bottom: 25%; }
+  .image-menu .banner {
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    padding: 20px 0;
+    background-size: cover;
+    /* Office Division*/ }
+    .image-menu .banner .office-txt {
+      color: #fff;
+      position: relative;
+      left: 5%;
+      text-align: left; }
+      .image-menu .banner .office-txt h3 {
+        font-size: 35px;
+        margin-bottom: 25px; }
+      .image-menu .banner .office-txt .red {
+        color: #fff0d7; }
+      .image-menu .banner .office-txt p {
+        font-size: 12px;
+        line-height: 100%; }
+  .image-menu .banner:hover .overlay, .image-menu .banner-main:hover .overlay {
+    display: block !important; }
+
+/*sitemap section*/
+.sitemap {
+  margin-top: 20px;
+  line-height: 150%; }
+  .sitemap .title {
+    font-weight: bold; }
+  .sitemap a {
+    font-size: 12px; }
+
+.sitemap > ul > li {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-right: none; }
+
+.sitemap > ul > li:last-child {
+  border-right: 1px solid #aaa; }
+
+/* about us top & common*/
+.subtitle p {
+  font-size: 35px;
+  line-height: 180%;
+  padding-top: 45px; }
+
+h1 {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 25px; }
+
+/* about us content list*/
+.aboutus-list {
+  margin: 0; }
+  .aboutus-list .aboutus-img01 {
+    height: 100%;
+    background: #ccc url("../../img/about_img_01.jpg") no-repeat 0 0;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box; }
+  .aboutus-list .aboutus-img02 {
+    height: 100%;
+    background: #ccc url("../../img/main_service_visual.jpg") no-repeat 0 0;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box; }
+  .aboutus-list .aboutus-txt02 .mobile-align h2 {
+    color: #d5793c;
+    font-size: 14px;
+    font-weight: bold; }
+  .aboutus-list .aboutus-txt02 .mobile-align p {
+    font-size: 30px; }
+  .aboutus-list img {
+    padding: 10px; }
+  .aboutus-list p {
+    font-size: 13px; }
+    .aboutus-list p .red {
+      color: #d5793c; }
+  .aboutus-list p:first-child {
+    color: #aaa; }
+  .aboutus-list .rightpadding {
+    padding-right: 30px;
+    text-align: right; }
+  .aboutus-list .leftpadding {
+    padding-left: 30px;
+    text-align: justify; }
+
+/* Business Division*/
+.nav-tabs li {
+  width: 50%;
+  text-align: center; }
+
+.tab-pane .title {
+  font-size: 30px;
+  margin-top: 25px; }
+.tab-pane .titlecon {
+  font-size: 24px;
+  color: #d5793c; }
+.tab-pane .contents01 .img-circle {
+  background-color: #e7e4df;
+  margin: 30px 10px 0 10px;
+  padding: 50px 30px 20px 30px;
+  width: 210px;
+  height: 210px;
+  text-align: center;
+  display: inline-table; }
+  .tab-pane .contents01 .img-circle p:first-child {
+    font-size: 17px; }
+.tab-pane .contents01 .img-circle:nth-child(2) {
+  background-color: #e5eae4; }
+.tab-pane .contents01 .img-circle:nth-child(3) {
+  background-color: #e3e7e8; }
+
+/* media query*/
+@media screen and (max-width: 991px) {
+  .sitemap > ul > li:nth-child(3),
+  .sitemap > ul > li:nth-child(6) {
+    border-right: 1px solid #aaa; }
+
+  .sitemap > ul > li:nth-child(1),
+  .sitemap > ul > li:nth-child(2),
+  .sitemap > ul > li:nth-child(3) {
+    border-bottom: none; } }
+@media screen and (min-width: 768px) {
+  .aboutus-txt02 {
+    float: left; }
+
+  .aboutus-img02 {
+    float: right; } }
+@media screen and (max-width: 767px) {
+  .mobile-align {
+    text-align: center !important; }
+
+  .leftpadding,
+  .rightpadding {
+    padding: 0 !important; }
+
+  .aboutus-list .bg_img {
+    height: 200px !important; } }
