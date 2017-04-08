@@ -1,0 +1,220 @@
+//common
+*{
+
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: $font-size-base;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+section,
+div,
+ul,
+li,
+aside,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+header {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+//list arrow
+
+.list_arrow i{
+    @include border-radius(5px);
+    border: 1px solid $deep_gray;
+    width: 35px;
+    height: 35px;
+    line-height: 130%;
+    padding: 0 10px;
+    color: $deep_gray;
+    font-size: $font-size-l;
+}
+
+.list_arrow i:hover {
+    color: $font-gray;
+    border-color:$font-gray;
+    text-decoration: none;
+}
+
+//button
+.btn {
+    padding: 10px 30px;
+    font-size: $font-size-m;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: $font-black;
+    background-color: $body-bg;
+}
+
+.btn-yellow {
+    background-color: $yellow_bg;
+    color: $font-white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid $border-white;
+}
+
+.btn-more {
+    font-size: $font-size-base;
+    padding: 5px 20px;
+    background-color: $body-bg;
+    border: $border-default;
+    text-transform: uppercase;
+}
+
+//link
+a{
+   color: $text-color;  
+}
+
+//color
+.color-emphasis {
+    color: $font-orange;
+}
+
+//layout
+.container {
+    max-width: 1280px;
+    min-width: 320px;
+}
+
+//footer
+.footer {
+    position: relative;
+    background-color: $footer_bg;
+    color: $text-color;
+    margin-top: 20px;
+    //footer social icnos
+    .container-social {
+        position: relative;
+        height: auto;
+        margin-bottom: 55px;
+        .shape_shadow {
+            position: absolute;
+            top: -20px;
+            left: 0px;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid $deep_gray;
+            border-left: 10px solid transparent;
+        }
+        //footer yellow background social icons
+        .footer-social {
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            background-color: $yellow_bg;
+            padding: 10px 15px 5px 15px;
+            color: $font-black;
+            label {
+                padding-right: 10px;
+            }
+            a {
+                color: $font-black;
+                padding: 0 2px;
+                display: inline-block;
+            }
+            a:hover {
+                color: $font-white;
+            }
+            i {
+                font-size: $font-size-m;
+                @include border-radius(50%);
+                border: 1px solid $border-black;
+                width: 23px;
+                height: 23px;
+                line-height: 170%;
+                padding: 0 4px;
+            }
+            i:hover {
+                color: $font-white;
+                border-color: $border-white;
+            }
+        }
+    }
+    //title of footer section
+    h4 {
+        color: $font-white;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    //footer list
+    .footer_link {
+        li {
+            display: inline-block;
+            text-align: left;
+            padding: 0 0 15px 0;
+            a {
+                color: $font-white;
+            }
+        }
+    }
+    //contact info -CONSTRUCTION OFFICE
+    .footer_contact {
+        width: 100%;
+        dt {
+            width: 10%;
+            i {
+                font-size: $font-size-m;
+                margin-right: 15px;
+            }
+        }
+        dd {
+            width: 90%;
+            margin-bottom: 10px;
+            a {
+                color: $font-white;
+            }
+        }
+    }
+    .footer_workhour {
+        li {
+            padding: 5px 0;
+            display: inline-block;
+            border-bottom: 1px dotted $border-dotted;
+        }
+        li:last-child,
+        li:nth-child(5) {
+            border-bottom: none;
+        }
+    }
+    //copyright footer
+    footer {
+        margin-top: 25px;
+        padding: 20px 0;
+        background-color: $footer_bgBottom;
+        a {
+            color: $font-white;
+            padding-left: 10px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        ul>li {
+            display: inline-block;
+        }
+    }
+}
